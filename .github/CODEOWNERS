@@ -1,0 +1,33 @@
+# CODEOWNERS file for calendar-client-762
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-apps @Armor-test/dept-ui @Armor-test/dept-security
+
+# Directory ownership
+/extensions/ @Armor-test/squad-api @Armor-test/grp-ui
+/components/ @Armor-test/unit-cloud @Armor-test/unit-test @Armor-test/grp-search
+/app/ @Armor-test/unit-devops @Armor-test/dept-identity
+/migrations/ @Armor-test/team-security @Armor-test/dept-data @Armor-test/grp-ui
+/pages/ @Armor-test/team-frontend @Armor-test/dept-reliability @Armor-test/squad-cloud
+/views/ @Armor-test/squad-product @Armor-test/squad-cache @Armor-test/grp-storage
+/helpers/ @Armor-test/squad-api @Armor-test/unit-devops @Armor-test/team-reporting
+/lib/ @Armor-test/dept-notifications @Armor-test/dept-logging
+/spec/ @Armor-test/dept-notifications @Armor-test/squad-reporting @Armor-test/unit-cloud
+/vendor/ @Armor-test/dept-security @Armor-test/unit-cloud
+
+# File type ownership
+*.lock @Armor-test/unit-cloud @Armor-test/dept-billing
+*.css @Armor-test/unit-cloud @Armor-test/dept-release @Armor-test/squad-database
+*.c @Armor-test/grp-payments @Armor-test/dept-security
+*.ts @Armor-test/squad-tooling @Armor-test/unit-governance
+*.java @Armor-test/dept-test @Armor-test/dept-api
+*.rs @Armor-test/squad-mobile @Armor-test/grp-storage
+*.h @Armor-test/squad-cloud @Armor-test/grp-integration @Armor-test/squad-qa
+*.cpp @Armor-test/squad-cloud @Armor-test/dept-test @Armor-test/squad-apps
+*.scss @Armor-test/squad-apps @Armor-test/dept-reporting
+*.swift @Armor-test/dept-billing @Armor-test/squad-apps
+
+# Security and special files
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
